@@ -1,0 +1,211 @@
+#website {
+    display: none;
+}
+
+#home {
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+}
+
+#home .navbar {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background: rgba(93, 152, 240, 0.999);
+    flex-direction: row;
+}
+
+#home .logo {
+    font-size: 48px;
+    margin-top: -10px;
+    margin-left: 25px;
+}
+
+#home B {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+    width: 30px;
+    color: #000;
+    background: rgba(91, 151, 242, 0.999);
+    background: blur;
+    border: 0px;
+}
+
+.navbar-item {
+    display: flex;
+    width: 15%;
+    position: relative;
+    left: -80px;
+}
+
+.navbar-item a {
+    padding: 0px 20px;
+    font-size: 16px;
+    font-weight: 100;
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar-item a:hover {
+    color: #fefaf5;
+    transition: .5s ease;
+}
+
+#home .search-panel {
+    position: relative;
+    left: -150px;
+    width: 250px;
+}
+
+#home .search-panel input {
+    height: 30px;
+    width: 250px;
+    outline: none;
+    margin-top: 5px;
+}
+
+#home .search-panel button {
+    position: relative;
+    top: 3px;
+    width: 100px;
+    height: 32.5px;
+    text-align: center;
+    margin: 0px 10px;
+    border-radius: -5px;
+    border-radius: 5px;
+}
+
+#home .search-panel button:hover {
+    width: 100px;
+    border-radius: 15px;
+    transition: .5s ease;
+}
+
+#home .search-panel {
+    display: flex;
+    flex-direction: row;
+}
+
+#home .sign-up {
+    position: relative;
+    top: 5px;
+    right: 15px;
+    display: flex;
+    font-size: 18px;
+}
+
+#home .sign-up:hover {
+    cursor: pointer;
+}
+
+.sign-up i {
+    padding-right: 5px;
+    font-size: 28px;
+}
+
+.home-about-field {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+}
+
+.home-about .left {
+    width: 45%;
+    height: 70vh;
+    padding-top: 75px;
+    padding-left: 100px;
+}
+
+.home-about .right {
+    width: 55%;
+    height: 70vh;
+}
+
+.home-about .right img {
+    position: relative;
+    top: 50px;
+    left: 120px;
+    width: 65%;
+    height: 300px;
+    border-radius: 25px;
+}
+
+.home-about .img {
+    position: absolute;
+    top: 75px;
+    width: 55%;
+}
+
+.home-about .img img {
+    margin-left: -20px;
+    width: 65%;
+    opacity: .5;
+    box-shadow: 15px 15px 45px rgba(0, 0, 0, .9);
+}
+
+#home .lessons {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: rgba(164, 195, 241, 0.5)
+}
+
+#home h3 {
+    position: relative;
+    width: 10%;
+    left: 100px;
+    top: 50px;
+    background: rgba(91, 151, 242, 0.999);
+    text-align: center;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, .5)
+}
+
+#home .null {
+    position: absolute;
+    top: 70px;
+    left: 150px;
+    width: 80%;
+    height: 1px;
+    background: rgba(91, 151, 242, 0.999);
+}
+
+#home .text {
+    margin: 70px 50px;
+    text-align: center;
+}
+
+#home .lessons .content {
+    position: relative;
+    left: 0px;
+    margin: 0px 5%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    height: 420px;
+    border: 0px;
+    background: rgba(168, 196, 239, 0.1);
+}
+
+#home .content-navbar a {
+    text-align: end;
+    text-decoration: none;
+    margin: 12.5px 15px;
+}
+
+#home .content-item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#home .content .row {
+    position: relative;
+    width: 30%;
+    height: 400px;
+    border: 0px solid #000;
+    margin: 10px 20px;
+    background: #fff;
+    border-radius: 15px;
+}
