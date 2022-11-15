@@ -208,4 +208,129 @@
     margin: 10px 20px;
     background: #fff;
     border-radius: 15px;
+    overflow: hidden;
+}
+
+#home .content .row:hover {
+    cursor: pointer;
+    position: inherit;
+}
+
+#home .content .row-item {
+    position: relative;
+    top: 15px;
+}
+
+#home .content img {
+    position: relative;
+    top: 10px;
+    width: 100%;
+    height: 200px;
+    border-radius: 5%;
+}
+
+#home .content img:hover {
+    transform: scale(110%);
+    transition: .5s ease;
+}
+
+#home .content a {
+    text-decoration: none;
+    background: rgba(91, 151, 242, 0.999);
+    font-size: 18px;
+    color: #000;
+}
+
+#home .content .row p {
+    font-size: 20px;
+    font-weight: 100;
+    color: rgba(0, 0, 0, .4);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#home .content .row-footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    top: 10px
+}
+
+#home .row-footer .summa {
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+}
+
+.summa p {
+    margin-top: -7.5px;
+    margin-left: 15px;
+}
+
+.summa i {
+    color: rgb(234, 234, 49);
+}
+
+#home .content .fa-lightbulb {
+    position: relative;
+    top: -5px;
+    left: 190px;
+    font-size: 28px;
+    color: rgba(91, 151, 242, 0.999)
+}
+
+#home .content .fa-lightbulb:hover {
+    color: rgba(237, 241, 20, 0.999);
+}
+
+
+/* #home .content a:hover:after {
+    position: absolute;
+    content: " ";
+    width: 50%;
+    height: 1px;
+    background: rgba(91, 151, 242, 0.999);
+} */
+
+
+/* #home .content .img {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background: url(https://roboschool.pro/content/uploads/2020/08/31-1024x683.jpg);
+    background-position: center;
+    background-size: cover;
+} */
+
+#home .program {
+    position: relative;
+    width: 100%;
+    height: 110vh;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.program-field {
+    position: relative;
+    top: 50px;
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    margin: 0px 95px;
+}
+
+.program-field .program-block {
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    box-shadow: 2px 2px 2px 5px rgba(0, 0, 0, .09)
+}
+
+.program-block img {
+    width: 100%;
+    height: 100%;
+}
+
+.program-information {
+    position: relative;
+    justify-content: center;
+    display: none;
 }
