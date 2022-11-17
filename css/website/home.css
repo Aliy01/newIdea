@@ -1,5 +1,7 @@
 #website {
     display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 #home {
@@ -33,9 +35,9 @@
 
 .navbar-item {
     display: flex;
-    width: 15%;
+    width: 30%;
     position: relative;
-    left: -80px;
+    left: 0px;
 }
 
 .navbar-item a {
@@ -47,43 +49,34 @@
 }
 
 .navbar-item a:hover {
+    width: 30%;
+    height: 30px;
+    padding-top: 2.5px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    color: #fefaf5;
+    transform: scale(105%);
+    transition: .5s ease;
+}
+
+.navbar-item .span {
+    width: 30%;
+    height: 30px;
+    padding-top: 2.5px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
     color: #fefaf5;
     transition: .5s ease;
 }
 
-#home .search-panel {
-    position: relative;
-    left: -150px;
-    width: 250px;
-}
-
-#home .search-panel input {
-    height: 30px;
-    width: 250px;
-    outline: none;
-    margin-top: 5px;
-}
-
-#home .search-panel button {
-    position: relative;
-    top: 3px;
-    width: 100px;
-    height: 32.5px;
-    text-align: center;
-    margin: 0px 10px;
-    border-radius: -5px;
-    border-radius: 5px;
-}
-
-#home .search-panel button:hover {
-    width: 100px;
-    border-radius: 15px;
+.span::before {
+    position: absolute;
+    width: 20px;
+    background: #000;
+    height: 1px;
     transition: .5s ease;
-}
-
-#home .search-panel {
-    display: flex;
-    flex-direction: row;
 }
 
 #home .sign-up {
@@ -101,6 +94,10 @@
 .sign-up i {
     padding-right: 5px;
     font-size: 28px;
+}
+
+.home-about {
+    display: none;
 }
 
 .home-about-field {
@@ -151,7 +148,7 @@
     background: rgba(164, 195, 241, 0.5)
 }
 
-#home h3 {
+#website h3 {
     position: relative;
     width: 10%;
     left: 100px;
@@ -161,7 +158,7 @@
     box-shadow: 0px 10px 10px rgba(0, 0, 0, .5)
 }
 
-#home .null {
+#website .null {
     position: absolute;
     top: 70px;
     left: 150px;
@@ -279,7 +276,208 @@
 }
 
 #home .content .fa-lightbulb:hover {
-    color: rgba(237, 241, 20, 0.999);
+    color: rgba(0, 0, 0, .75);
+}
+
+.lesson-unit {
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    z-index: 999;
+    justify-content: center;
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+.lesson-unit .row {
+    position: relative;
+    left: 150px;
+    margin-left: 120px;
+    width: 70%;
+    height: 160px;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, .09);
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+
+.lesson-unit .row:hover {
+    transform: scale(105%);
+    transition: .5s ease;
+}
+
+.lesson-unit .icon {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 0px 15px;
+    padding: 10px;
+}
+
+.lesson-unit .icon i {
+    position: relative;
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+.lesson-unit .icon i:nth-child(1) {
+    top: 20px;
+    left: 5px;
+}
+
+.lesson-unit .icon i:nth-child(2) {
+    top: 5px;
+}
+
+.lesson-unit .icon i:nth-child(3) {
+    top: 20px;
+    left: -5px;
+}
+
+.lesson-unit .fa-chart-bar {
+    left: -5px;
+}
+
+.lesson-unit .name {
+    font-size: 20px;
+    margin: 0px 20px;
+    color: rgba(93, 152, 240, 0.999);
+}
+
+.lesson-unit p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    color: #9f9f9f;
+    font-size: 22px;
+    margin: 0px 5px;
+    text-align: center;
+}
+
+.algoritm {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    /* background: rgba(93, 152, 240, 0.5) */
+}
+
+.algoritm-field {
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.algoritm-field .algoritm-img {
+    position: absolute;
+    width: 50%;
+    height: 60vh;
+    background: url("https://blog.hackajob.co/content/images/2021/03/AdobeStock_157639237.jpeg");
+    background-position: center center;
+    background-size: cover;
+    top: 100px;
+    left: 22.5%;
+}
+
+.algoritm .algoritm-name {
+    width: 250px;
+    height: 100px;
+    background: rgba(0, 0, 0, .2);
+    position: relative;
+    top: 65px;
+    left: 180px;
+    color: rgba(91, 151, 242, 0.999);
+}
+
+.algoritm .algoritm-name:hover {
+    background: rgba(255, 255, 255, .7);
+    color: #222;
+    transition: .5s ease;
+}
+
+.algoritm .algoritm-information:hover {
+    background: rgba(255, 255, 255, .7);
+    color: #222;
+    transition: .5s ease;
+}
+
+.algoritm .algoritm-name h1 {
+    position: relative;
+    top: 25px;
+    left: 40px;
+}
+
+.algoritm h1::after {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: rgba(91, 151, 242, 0.999);
+}
+
+.algoritm-text {
+    width: 30%;
+    height: 120px;
+    background: rgba(0, 0, 0, .2);
+    position: relative;
+    left: 65%;
+    top: -30px;
+    justify-content: center;
+    color: #ddd;
+}
+
+.algoritm-text:hover {
+    background: rgba(255, 255, 255, .7);
+    color: #222;
+    transition: .5s ease;
+}
+
+.algoritm-text p {
+    position: relative;
+    top: 20px;
+    margin: 0px 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.algoritm-information {
+    width: 25%;
+    height: 220px;
+    background: rgba(0, 0, 0, .3);
+    position: relative;
+    top: 158px;
+    left: 850px;
+    justify-content: center;
+    text-align: center;
+    color: #ddd;
+}
+
+.algoritm-information p {
+    position: relative;
+    top: 15px;
+}
+
+.algoritm-information .row {
+    margin-top: 20px;
+}
+
+.algoritm-information i {
+    font-size: 48px;
+    color: whitesmoke;
+}
+
+.algoritm .btn {
+    position: relative;
+    width: 20%;
+    height: 50px;
+    top: 50px;
+    justify-content: center;
+    left: 65%;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding-top: 10px;
 }
 
 
@@ -301,6 +499,8 @@
     background-size: cover;
 } */
 
+
+/* 
 #home .program {
     position: relative;
     width: 100%;
@@ -333,4 +533,4 @@
     position: relative;
     justify-content: center;
     display: none;
-}
+} */
