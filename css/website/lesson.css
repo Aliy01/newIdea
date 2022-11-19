@@ -1,0 +1,247 @@
+#lesson {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    overflow: hidden;
+    top: 50px;
+}
+
+#lesson h3 {
+    margin-top: 12.5px;
+    width: 150px;
+}
+
+#lesson .null {
+    width: 70%;
+    left: 250px;
+    top: 80px;
+}
+
+#lesson p {
+    margin: 25px 275px;
+}
+
+#lesson p i {
+    margin: 0px 5px;
+}
+
+.lesson-information {
+    position: relative;
+    top: 40px;
+    width: 100%;
+    height: 320px;
+    text-align: center;
+}
+
+.lesson-information .btn {
+    width: 15%;
+    height: 45px;
+    padding: 10px;
+    border-radius: 0px;
+    border-end-end-radius: 15px;
+    border-start-start-radius: 15px;
+    border-right: 0px;
+    border-top: 0px;
+}
+
+.lesson-information .btn:hover {
+    transform: scale(105%);
+    background: rgba(0, 0, 0, .1);
+    animation: btnanimation 1s linear;
+    transition: .5s ease;
+}
+
+@keyframes btnanimation {
+    0% {
+        border-right: 1px;
+        border-color: aqua;
+    }
+    25% {
+        border-top: 1px;
+        border-left: 0px;
+        border-color: rgb(72, 220, 240);
+    }
+    50% {
+        border-left: 1px;
+        border-bottom: 0px;
+        border-color: rgb(35, 156, 204);
+    }
+    75% {
+        border-bottom: 1px;
+        border-right: 0px;
+        border-color: rgb(49, 123, 207);
+    }
+    100% {
+        border: 1px solid #000;
+        border-color: rgb(7, 71, 153);
+    }
+}
+
+.lesson-field {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    display: flex;
+    flex-direction: row;
+}
+
+.lesson-field .field {
+    width: 80%;
+    height: 650px;
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.lesson-field .content {
+    position: relative;
+    left: 0px;
+    width: 95%;
+    height: 650px;
+    background: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.lesson-field .content .row {
+    width: 30%;
+    height: 250px;
+    margin: 20px 13.25px;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+}
+
+.lesson-field img {
+    position: relative;
+    top: 10px;
+    width: 100%;
+    height: 150px;
+    transform: scale(111%);
+}
+
+.lesson-field img:hover {
+    transform: scale(115%);
+    top: -5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .5)
+}
+
+.lesson-field .row-information {
+    position: relative;
+    top: 18px;
+    left: 0px;
+    font-size: 32px;
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    display: flex;
+    background: rgba(91, 151, 242, 0.999);
+}
+
+.lesson-field .row-information h1 {
+    margin: 0px 5px;
+}
+
+.lesson-field .row-information i {
+    margin: 10px 15px;
+}
+
+.lesson-field .header {
+    width: 95%;
+    height: 75px;
+    border: 1px solid #000;
+    border-bottom: none;
+}
+
+.lesson-field .sidebar {
+    width: 30%;
+    height: 650px;
+    /* border: 1px solid #000; */
+    margin-right: 50px;
+    text-align: center;
+}
+
+#lesson .course-kind {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000;
+}
+
+#lesson .course-kind .title {
+    height: 70px;
+    background: rgba(91, 151, 242, 0.999);
+    padding: 17.5px;
+}
+
+#lesson .course-kind .body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#lesson .sidebar .row {
+    width: 100%;
+    height: 75px;
+    margin: 0px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+#lesson .sidebar .row:hover,
+.all {
+    width: 100%;
+    background: rgba(91, 151, 242, 0.3)
+}
+
+#lesson .course-kind i {
+    position: relative;
+    top: 30px;
+    right: 150px;
+}
+
+.course-task {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    top: 10px;
+}
+
+.course-task i {
+    position: absolute;
+    left: 10px;
+}
+
+.course-task p {
+    position: relative;
+    top: -5px;
+    left: -175px;
+    width: 75%;
+}
+
+.fa-dove {
+    font-size: 48px;
+    rotate: 10deg;
+    color: rgba(91, 151, 242, 0.999);
+}
+
+.fa-envelope {
+    margin: 5px 48px;
+    rotate: 45deg;
+    color: rgba(91, 151, 242, 0.4);
+}
+
+.course-task .btn {
+    position: relative;
+    top: -10px;
+    width: 50%;
+    height: 40px;
+    border-radius: 0px;
+    border-start-start-radius: 15px;
+    border-end-end-radius: 15px;
+}

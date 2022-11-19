@@ -97,7 +97,7 @@
 }
 
 .home-about {
-    display: none;
+    flex-direction: column;
 }
 
 .home-about-field {

@@ -1,0 +1,1 @@
+const lessonPage = document.querySelector(".lesson");
