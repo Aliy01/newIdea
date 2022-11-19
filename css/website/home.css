@@ -8,6 +8,7 @@
     width: 100%;
     height: 100vh;
     background: #fff;
+    flex-direction: column;
 }
 
 #home .navbar {
@@ -41,8 +42,8 @@
 }
 
 .navbar-item a {
-    padding: 0px 20px;
-    font-size: 16px;
+    padding: 0px 40px;
+    font-size: 19px;
     font-weight: 100;
     text-decoration: none;
     color: #000;
@@ -57,25 +58,6 @@
     border-radius: 10px;
     color: #fefaf5;
     transform: scale(105%);
-    transition: .5s ease;
-}
-
-.navbar-item .span {
-    width: 30%;
-    height: 30px;
-    padding-top: 2.5px;
-    text-align: center;
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 10px;
-    color: #fefaf5;
-    transition: .5s ease;
-}
-
-.span::before {
-    position: absolute;
-    width: 20px;
-    background: #000;
-    height: 1px;
     transition: .5s ease;
 }
 
@@ -139,6 +121,25 @@
     width: 65%;
     opacity: .5;
     box-shadow: 15px 15px 45px rgba(0, 0, 0, .9);
+}
+
+.home-about .btn {
+    position: relative;
+    top: -10px;
+    width: 50%;
+    height: 40px;
+    border-radius: 0px;
+    border-start-start-radius: 15px;
+    border-end-end-radius: 15px;
+    border-top: none;
+    border-right: none;
+}
+
+.home-about .btn:hover {
+    transform: scale(105%);
+    background: rgba(0, 0, 0, .1);
+    animation: btnanimation 1s linear;
+    transition: .5s ease;
 }
 
 #home .lessons {
@@ -301,6 +302,19 @@
     box-shadow: 7px 7px 7px rgba(0, 0, 0, .09);
     background: #f1f1f1;
     border-radius: 5px;
+    animation: lessonRow 10s infinite;
+}
+
+@keyframes lessonRow {
+    0% {
+        left: 300px;
+    }
+    50% {
+        left: 0px
+    }
+    100% {
+        left: -500px;
+    }
 }
 
 .lesson-unit .row:hover {

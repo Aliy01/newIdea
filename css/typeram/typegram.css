@@ -1,12 +1,16 @@
 #typegram {
     display: none;
     overflow: hidden;
+    flex-direction: row;
+    width: 100%;
 }
 
 #typegram .navigation-bar {
     position: fixed;
     height: 695px;
     display: flex;
+    left: 0px;
+    width: 100px;
     flex-direction: column;
     border: 1px solid #000;
     /* border-radius: 25px; */
@@ -26,15 +30,12 @@
 }
 
 #typegram .row i {
-    margin: 10px 0px;
+    margin: 5px 0px;
+    padding: 0px 15px;
 }
 
 .fa-house {
-    margin-top: 25px;
-}
-
-#typegram i:hover {
-    color: #777;
+    margin-top: 20px;
 }
 
 #typegram .row:hover {
@@ -47,7 +48,8 @@
     position: fixed;
     width: 30%;
     height: 695px;
-    margin-left: 75px;
+    left: 10px;
+    margin-left: 90px;
     justify-items: center;
     text-align: center;
     border: 1px solid #000;
@@ -63,21 +65,31 @@
 }
 
 .user-field .row {
+    position: relative;
     display: flex;
+    flex-direction: row;
+    margin-left: 0px;
     border-bottom: 1px solid #888;
 }
 
+.user-field .right {
+    width: 50%;
+    position: absolute;
+}
+
 .user-field img {
+    position: relative;
+    left: -150px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    margin: 10px auto;
+    margin: 10px 0px;
 }
 
 .content {
     width: 64.2%;
     height: 695px;
-    position: absolute;
+    position: fixed;
     left: 485px;
     background: #fff;
     border: 1px solid #000;
@@ -85,7 +97,7 @@
 }
 
 .field {
-    width: 70%;
+    width: 60%;
     height: 40px;
     background-color: #999;
     border: 1px solid #000;
@@ -107,7 +119,7 @@
 .content .user-content {
     width: 40%;
     height: 694px;
-    border: 1px solid #000;
+    border-left: 1px solid #000;
 }
 
 .content-navbar {
