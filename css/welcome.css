@@ -125,10 +125,13 @@
 }
 
 @media(max-width:1084px) {
+    #welcome {
+        overflow: hidden;
+    }
     #welcome .welcome-btn {
         flex-direction: column;
         top: 30%;
-        left: 20%
+        left: 20%;
     }
     #welcome .welcome-btn p {
         position: relative;
