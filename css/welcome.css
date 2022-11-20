@@ -123,3 +123,16 @@
     animation: btnanimation 1s linear;
     transition: .5s ease;
 }
+
+@media(max-width:1084px) {
+    #welcome .welcome-btn {
+        flex-direction: column;
+        top: 30%;
+        left: 20%
+    }
+    #welcome .welcome-btn p {
+        position: relative;
+        left: 40%;
+        bottom: -10px;
+    }
+}
