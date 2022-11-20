@@ -6,8 +6,11 @@
 }
 
 #welcome {
+    position: absolute;
+    top: 75px;
     max-width: 100%;
-    max-height: 500px;
+    max-height: 300px;
+    justify-content: center;
 }
 
 #welcome .welcome-btn {
@@ -126,13 +129,14 @@
 
 @media(max-width:1084px) {
     #welcome {
-        max-height: 100px;
-        overflow: hidden;
+        position: absolute;
+        top: 160px;
+        left: 50px;
+        max-width: 300px;
+        max-height: 300px;
     }
     #welcome .welcome-btn {
         flex-direction: column;
-        top: 30%;
-        left: 20%;
     }
     #welcome .welcome-btn p {
         position: relative;
