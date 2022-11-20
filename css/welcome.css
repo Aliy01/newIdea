@@ -126,6 +126,7 @@
 
 @media(max-width:1084px) {
     #welcome {
+        max-height: 300px;
         overflow: hidden;
     }
     #welcome .welcome-btn {
