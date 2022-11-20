@@ -19,6 +19,11 @@
     flex-direction: row;
 }
 
+#home .bar {
+    display: none;
+    font-size: 18px;
+}
+
 #home .logo {
     font-size: 48px;
     margin-top: -10px;
