@@ -1,4 +1,7 @@
 @media (max-width:1084px) {
+    #website {
+        min-height: 100vh;
+    }
     #home {
         overflow: hidden;
         min-height: 500vh;
